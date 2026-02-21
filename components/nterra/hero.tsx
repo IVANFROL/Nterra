@@ -19,11 +19,6 @@ export function Hero({ lang }: { lang: Lang }) {
       <div className="pointer-events-none absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-primary/8 blur-[120px]" />
       <div className="pointer-events-none absolute bottom-0 right-0 w-[400px] h-[400px] rounded-full bg-accent/6 blur-[100px]" />
 
-      <div className="mb-8 glass rounded-full px-5 py-2 flex items-center gap-2 animate-float">
-        <span className="h-2 w-2 rounded-full bg-accent" />
-        <span className="text-sm font-medium text-foreground/80">{t.badge}</span>
-      </div>
-
       <h1 className="text-center text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-tight tracking-tight text-balance max-w-5xl">
         <span className="bg-gradient-to-b from-foreground via-foreground/90 to-foreground/60 bg-clip-text text-transparent">
           {t.heroTitle1}
@@ -52,7 +47,7 @@ export function Hero({ lang }: { lang: Lang }) {
           href="#projects"
           className="group flex items-center gap-3 px-8 py-4 sm:px-10 sm:py-5 bg-accent text-accent-foreground text-base sm:text-lg font-bold rounded-2xl shadow-xl shadow-accent/20 hover:shadow-accent/40 hover:scale-[1.02] transition-all duration-300"
         >
-          {t.investBtn}
+          {t.becomeInvestor}
           <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
         </a>
         <a

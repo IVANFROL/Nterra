@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Send } from "lucide-react"
+import { Send, ArrowRight } from "lucide-react"
 import type { Lang } from "@/lib/translations"
 import { translations } from "@/lib/translations"
 
@@ -54,6 +54,16 @@ export function Footer({ lang }: { lang: Lang }) {
         </form>
 
         <div className="border-t border-border pt-8" />
+
+        <div className="mb-8 flex justify-center">
+          <a
+            href="#contact"
+            className="group flex items-center justify-center gap-3 px-8 py-4 bg-accent text-accent-foreground text-base font-bold rounded-2xl shadow-xl shadow-accent/15 hover:shadow-accent/30 hover:scale-[1.02] transition-all duration-300"
+          >
+            {t.becomeInvestor}
+            <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+          </a>
+        </div>
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-foreground/40">
           <div className="flex items-center gap-2">
